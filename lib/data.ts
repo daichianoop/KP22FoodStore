@@ -24,7 +24,7 @@ export const products: Product[] = [
     id: "3",
     name: "Tedhe Medhe Original",
     description: "Uniquely shaped savory snack with a blend of spices.",
-    price: calculatePrice(30),
+    price: calculatePrice(20),
     image: "https://www.bigbasket.com/media/uploads/p/s/40226709_11-bingo-tedhe-medhe-snacks-with-corn-rice-dal-masala-tadka.jpg",
     category: "snacks",
   },
