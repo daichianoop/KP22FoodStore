@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 353 50% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 353 50% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 353 50% 13%;
+
+    --primary: 343 100% 53%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 45 94% 61%;
+    --secondary-foreground: 353 50% 13%;
+
+    --muted: 184 10% 33%;
+    --muted-foreground: 0 0% 96.1%;
+
+    --accent: 143 30% 60%;
+    --accent-foreground: 353 50% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 184 10% 33% / 0.2;
+    --input: 184 10% 33% / 0.2;
+    --ring: 343 100% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 353 50% 13%;
+    --foreground: 0 0% 98%;
+
+    --card: 353 50% 13%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 353 50% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 343 100% 53%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 45 94% 61%;
+    --secondary-foreground: 353 50% 13%;
+
+    --muted: 184 10% 33%;
+    --muted-foreground: 0 0% 96.1%;
+
+    --accent: 143 30% 60%;
+    --accent-foreground: 353 50% 13%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 184 10% 33% / 0.2;
+    --input: 184 10% 33% / 0.2;
+    --ring: 343 100% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23301014' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-opacity-20 backdrop-blur-lg backdrop-filter border border-white/10 shadow-xl;
+}
+
+.glass-card {
+  @apply bg-black_bean/30 backdrop-blur-md backdrop-filter border border-white/10 shadow-xl;
+}
+
+.glass-nav {
+  @apply bg-black_bean/50 backdrop-blur-lg backdrop-filter border-b border-white/10;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(48, 16, 20, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 16, 83, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 16, 83, 0.8);
+}
+
+/* Product card hover effects */
+.product-card {
+  @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,16,83,0.3)];
+}
+
+.product-card img {
+  @apply transition-all duration-500;
+}
+
+.product-card:hover img {
+  @apply scale-110;
+}
+
+/* Button glow effects */
+.glow-button {
+  @apply relative overflow-hidden transition-all duration-300;
+}
+
+.glow-button::after {
+  content: "";
+  @apply absolute inset-0 rounded-lg opacity-0 transition-opacity duration-300 bg-gradient-to-r from-folly/50 to-sunglow/50 blur-xl;
+  z-index: -1;
+}
+
+.glow-button:hover::after {
+  @apply opacity-100;
+}
+
+/* Custom utilities */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-folly to-sunglow;
+}
